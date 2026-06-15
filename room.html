@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Rooms & Catering - Hotel Booking</title>
+
+<style>
+    *{
+        margin:0;
+        padding:0;
+        box-sizing:border-box;
+        font-family: Arial, sans-serif;
+    }
+
+    body{
+        background:#f5f7fa;
+    }
+
+    .rooms-section{
+        padding:60px 8%;
+        text-align:center;
+    }
+
+    .rooms-section h1{
+        font-size:40px;
+        margin-bottom:15px;
+        color:#333;
+    }
+
+    .rooms-section p{
+        color:#666;
+        margin-bottom:40px;
+    }
+
+    .room-container{
+        display:flex;
+        justify-content:center;
+        gap:30px;
+        flex-wrap:wrap;
+    }
+
+    .room-card{
+        width:340px;
+        background:#fff;
+        border-radius:15px;
+        overflow:hidden;
+        box-shadow:0 5px 15px rgba(0,0,0,0.1);
+        transition:0.3s;
+    }
+
+    .room-card:hover{
+        transform:translateY(-10px);
+    }
+
+    .room-card img{
+        width:100%;
+        height:220px;
+        object-fit:cover;
+    }
+
+    .room-content{
+        padding:25px;
+    }
+
+    .room-content h2{
+        color:#333;
+        margin-bottom:10px;
+    }
+
+    .room-number{
+        color:#0077b6;
+        font-weight:bold;
+        margin-bottom:15px;
+    }
+
+    .features{
+        list-style:none;
+        text-align:left;
+        margin-bottom:20px;
+    }
+
+    .features li{
+        padding:8px 0;
+        color:#555;
+    }
+
+    .btn{
+        display:inline-block;
+        text-decoration:none;
+        background:#0077b6;
+        color:#fff;
+        padding:12px 25px;
+        border-radius:30px;
+        transition:0.3s;
+    }
+
+    .btn:hover{
+        background:#023e8a;
+    }
+</style>
+</head>
+<body>
+
+<section class="rooms-section">
+    <h1>Luxury Rooms & Catering Services</h1>
+    <p>Enjoy a comfortable stay with premium facilities and beautiful scenery outside your room.</p>
+
+    <div class="room-container">
+
+        <!-- Room 101 -->
+        <div class="room-card">
+            <img src="https://images.unsplash.com/photo-1566073771259-6a8506099945" alt="Hotel Room">
+            <div class="room-content">
+                <h2>Deluxe AC Room</h2>
+                <p class="room-number">Room No: 101</p>
+
+                <ul class="features">
+                    <li>❄ Air Conditioned Bedroom</li>
+                    <li>🛏 Soft Blanket & King Size Bed</li>
+                    <li>🍽 In-Room Dining & Catering Service</li>
+                    <li>🌄 Scenic Mountain View Outside</li>
+                    <li>📶 Free Wi-Fi</li>
+                </ul>
+
+                <a href="#" class="btn">Book Now</a>
+            </div>
+        </div>
+
+        <!-- Room 102 -->
+        <div class="room-card">
+            <img src="https://images.unsplash.com/photo-1505693416388-ac5ce068fe85" alt="Luxury Room">
+            <div class="room-content">
+                <h2>Premium Suite</h2>
+                <p class="room-number">Room No: 102</p>
+
+                <ul class="features">
+                    <li>❄ Luxury AC Bedroom</li>
+                    <li>🛏 Premium Blanket & Cushions</li>
+                    <li>🍴 Buffet & Catering Services</li>
+                    <li>🌅 Beautiful Garden View</li>
+                    <li>☕ Complimentary Breakfast</li>
+                </ul>
+
+                <a href="#" class="btn">Book Now</a>
+            </div>
+        </div>
+
+        <!-- Room 103 -->
+        <div class="room-card">
+            <img src="https://images.unsplash.com/photo-1582719508461-905c673771fd" alt="Suite Room">
+            <div class="room-content">
+                <h2>Family AC Suite</h2>
+                <p class="room-number">Room No: 103</p>
+
+                <ul class="features">
+                    <li>❄ Spacious AC Family Room</li>
+                    <li>🛏 Extra Blankets Available</li>
+                    <li>🍽 Full Catering & Room Service</li>
+                    <li>🌊 Balcony with Lake View</li>
+                    <li>📺 Smart TV & Mini Fridge</li>
+                </ul>
+
+                <a href="#" class="btn">Book Now</a>
+            </div>
+        </div>
+
+    </div>
+</section>
+
+</body>
+</html>

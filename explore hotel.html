@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Explore Rooms - Hotel Booking</title>
+
+<style>
+    *{
+        margin:0;
+        padding:0;
+        box-sizing:border-box;
+        font-family:Arial, sans-serif;
+    }
+
+    body{
+        background:#f5f5f5;
+    }
+
+    .explore{
+        width:90%;
+        margin:50px auto;
+        text-align:center;
+    }
+
+    .explore h1{
+        margin-bottom:15px;
+        color:#333;
+    }
+
+    .explore p{
+        color:#666;
+        margin-bottom:40px;
+    }
+
+    .room-container{
+        display:flex;
+        justify-content:center;
+        gap:30px;
+        flex-wrap:wrap;
+    }
+
+    .room-card{
+        width:350px;
+        background:#fff;
+        border-radius:10px;
+        overflow:hidden;
+        box-shadow:0 5px 15px rgba(0,0,0,0.15);
+        transition:0.3s;
+    }
+
+    .room-card:hover{
+        transform:translateY(-8px);
+    }
+
+    .room-card img{
+        width:100%;
+        height:220px;
+        object-fit:cover;
+    }
+
+    .room-content{
+        padding:20px;
+    }
+
+    .room-content h2{
+        color:#222;
+        margin-bottom:10px;
+    }
+
+    .room-content p{
+        color:#555;
+        line-height:1.6;
+        margin-bottom:20px;
+    }
+
+    .btn{
+        text-decoration:none;
+        background:#007bff;
+        color:#fff;
+        padding:10px 20px;
+        border-radius:5px;
+        display:inline-block;
+    }
+
+    .btn:hover{
+        background:#0056b3;
+    }
+</style>
+</head>
+<body>
+
+<section class="explore">
+    <h1>Explore Our AC Rooms</h1>
+    <p>Experience luxury and comfort with our spacious air-conditioned rooms designed for families and groups.</p>
+
+    <div class="room-container">
+
+        <!-- 2 Bedroom AC Room -->
+        <div class="room-card">
+            <img src="https://images.unsplash.com/photo-1566665797739-1674de7a421a?auto=format&fit=crop&w=800&q=80"
+                 alt="2 Bedroom AC Room">
+
+            <div class="room-content">
+                <h2>2 Bedroom AC Suite</h2>
+                <p>
+                    Enjoy a premium stay in our fully air-conditioned
+                    2-bedroom suite featuring king-size beds, attached
+                    bathrooms, Wi-Fi, television, and beautiful outside views.
+                </p>
+                <a href="#" class="btn">Book Now</a>
+            </div>
+        </div>
+
+        <!-- 3 Bedroom AC Room -->
+        <div class="room-card">
+            <img src="https://images.unsplash.com/photo-1582719508461-905c673771fd?auto=format&fit=crop&w=800&q=80"
+                 alt="3 Bedroom AC Room">
+
+            <div class="room-content">
+                <h2>3 Bedroom AC Family Suite</h2>
+                <p>
+                    Perfect for large families and groups, this luxurious
+                    3-bedroom AC suite includes spacious bedrooms, living
+                    space, modern amenities, room service, and scenic views.
+                </p>
+                <a href="#" class="btn">Book Now</a>
+            </div>
+        </div>
+
+    </div>
+</section>
+
+</body>
+</html>

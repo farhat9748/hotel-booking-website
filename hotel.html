@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Hotel Facilities</title>
+
+<style>
+    *{
+        margin:0;
+        padding:0;
+        box-sizing:border-box;
+        font-family: Arial, sans-serif;
+    }
+
+    body{
+        background:#f5f5f5;
+    }
+
+    .facilities{
+        padding:60px 8%;
+        text-align:center;
+    }
+
+    .facilities h1{
+        font-size:40px;
+        color:#333;
+        margin-bottom:15px;
+    }
+
+    .facilities p{
+        color:#666;
+        margin-bottom:40px;
+    }
+
+    .facility-container{
+        display:grid;
+        grid-template-columns:repeat(auto-fit, minmax(250px, 1fr));
+        gap:30px;
+    }
+
+    .card{
+        background:#fff;
+        border-radius:15px;
+        overflow:hidden;
+        box-shadow:0 5px 15px rgba(0,0,0,0.1);
+        transition:0.3s;
+    }
+
+    .card:hover{
+        transform:translateY(-10px);
+    }
+
+    .card img{
+        width:100%;
+        height:220px;
+        object-fit:cover;
+    }
+
+    .card-content{
+        padding:25px;
+    }
+
+    .card-content h3{
+        color:#222;
+        margin-bottom:15px;
+        font-size:24px;
+    }
+
+    .card-content p{
+        color:#666;
+        line-height:1.7;
+    }
+</style>
+</head>
+<body>
+
+<section class="facilities">
+    <h1>Our Premium Facilities</h1>
+    <p>Experience luxury dining, entertainment, and business amenities at our hotel.</p>
+
+    <div class="facility-container">
+
+        <!-- Bar -->
+        <div class="card">
+            <img src="https://images.unsplash.com/photo-1514933651103-005eec06c04b" alt="Luxury Bar">
+            <div class="card-content">
+                <h3>Luxury Bar</h3>
+                <p>
+                    Relax in our elegant bar featuring premium beverages,
+                    cocktails, soft music, and a comfortable ambiance for
+                    friends and business guests.
+                </p>
+            </div>
+        </div>
+
+        <!-- Dinner -->
+        <div class="card">
+            <img src="https://images.unsplash.com/photo-1414235077428-338989a2e8c0" alt="Fine Dining">
+            <div class="card-content">
+                <h3>Fine Dining</h3>
+                <p>
+                    Enjoy delicious multi-cuisine dishes prepared by expert
+                    chefs in a sophisticated dining environment perfect for
+                    family and corporate dinners.
+                </p>
+            </div>
+        </div>
+
+        <!-- Buffet -->
+        <div class="card">
+            <img src="https://images.unsplash.com/photo-1555244162-803834f70033" alt="Buffet">
+            <div class="card-content">
+                <h3>Grand Buffet</h3>
+                <p>
+                    Explore our lavish buffet with a wide range of
+                    international and local delicacies, desserts, salads,
+                    and refreshing beverages.
+                </p>
+            </div>
+        </div>
+
+        <!-- Conference Hall -->
+        <div class="card">
+            <img src="https://images.unsplash.com/photo-1511578314322-379afb476865" alt="Conference Hall">
+            <div class="card-content">
+                <h3>Conference Hall</h3>
+                <p>
+                    Our spacious and well-designed conference hall can
+                    comfortably accommodate up to <strong>200 guests</strong>.
+                    It is equipped with modern audio-visual facilities,
+                    high-speed Wi-Fi, and comfortable seating for business
+                    meetings, seminars, and corporate events.
+                </p>
+            </div>
+        </div>
+
+    </div>
+</section>
+
+</body>
+</html>

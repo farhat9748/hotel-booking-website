@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Hotel Contact Details</title>
+
+<style>
+    * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        font-family: Arial, sans-serif;
+    }
+
+    body {
+        background: #f4f4f4;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        min-height: 100vh;
+    }
+
+    .contact-container {
+        width: 90%;
+        max-width: 1000px;
+        background: #fff;
+        display: flex;
+        flex-wrap: wrap;
+        border-radius: 10px;
+        overflow: hidden;
+        box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+    }
+
+    .contact-info {
+        flex: 1;
+        background: #1e3a8a;
+        color: white;
+        padding: 40px;
+    }
+
+    .contact-info h2 {
+        margin-bottom: 20px;
+    }
+
+    .contact-info p {
+        margin-bottom: 20px;
+        line-height: 1.8;
+    }
+
+    .contact-form {
+        flex: 1;
+        padding: 40px;
+    }
+
+    .contact-form h2 {
+        margin-bottom: 20px;
+        color: #333;
+    }
+
+    .contact-form input,
+    .contact-form textarea {
+        width: 100%;
+        padding: 12px;
+        margin-bottom: 15px;
+        border: 1px solid #ccc;
+        border-radius: 5px;
+    }
+
+    .contact-form button {
+        background: #1e3a8a;
+        color: white;
+        padding: 12px 25px;
+        border: none;
+        border-radius: 5px;
+        cursor: pointer;
+    }
+
+    .contact-form button:hover {
+        background: #142c69;
+    }
+</style>
+</head>
+<body>
+
+<div class="contact-container">
+
+    <!-- Contact Information -->
+    <div class="contact-info">
+        <h2>Contact Details</h2>
+
+        <p><strong>🏨 Hotel Name:</strong> Hotel Ease</p>
+
+        <p><strong>📍 Address:</strong><br>
+        123 Beach Road,<br>
+        New Delhi, India - 110001
+        </p>
+
+        <p><strong>📞 Phone:</strong><br>
+        +91 98765 43210<br>
+        +91 91234 56789
+        </p>
+
+        <p><strong>✉ Email:</strong><br>
+        info@grandpalacehotel.com
+        </p>
+
+        <p><strong>🕒 Reception Hours:</strong><br>
+        Open 24 Hours
+        </p>
+    </div>
+
+    <!-- Contact Form -->
+    <div class="contact-form">
+        <h2>Send Us a Message</h2>
+
+        <form>
+            <input type="text" placeholder="Enter Your Name" required>
+            <input type="email" placeholder="Enter Your Email" required>
+            <input type="tel" placeholder="Enter Your Phone Number" required>
+            <textarea rows="5" placeholder="Enter Your Message"></textarea>
+            <button type="submit">Send Message</button>
+        </form>
+    </div>
+
+</div>
+
+</body>
+</html>
